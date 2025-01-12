@@ -1,0 +1,5 @@
+Header set Content-Security-Policy "default-src 'self'; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; frame-src 'self' https://www.google.com/; script-src 'self' https://r.mobirise.com/script.js ajax.cloudflare.com static.cloudflareinsights.com; script-src-attr 'unsafe-hashes' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM='; connect-src cloudflareinsights.com"
+Header always append X-Frame-Options "DENY"
+Header set X-Content-Type-Options nosniff
+Header always set Strict-Transport-Security "max-age=31536000"
+ErrorDocument 404 /errors/404.html
